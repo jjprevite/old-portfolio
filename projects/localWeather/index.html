@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local Weather Viewer</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans:300,400" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<h1 id="get-weather" onclick="myFunction()">What's the weather like?</h1>
+<div id="weather-box">
+	<div id="temperature"></div>
+	<h6 id="button">Toggle between &#8457;/&#8451;</h6>
+	<p id="sumDoc">Summary: <span class="data-point" id="summary"></span></p>
+	<p>Humidity: <span class="data-point" id="humidity"></span></p>
+	<p>Windspeed: <span class="data-point" id="windspeed"></span></p>
+	
+	
+	<canvas id="icon_id" width="128" height="128"></canvas>
+</div>
+
+<div id="modal" style="display: none">
+	<img class= "gif" src="ring.gif">
+	<br>
+	<p>Loading</p>
+</div>
+
+<footer style="text-align: center"><a href="https://darksky.net/poweredby/" id="footer">Powered by Dark Sky</a></footer>
+
+</body>
+</html>

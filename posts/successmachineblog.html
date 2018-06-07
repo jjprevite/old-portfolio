@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>JJP - Success Story Machine Blog Post</title>
+
+   
+    <link rel="stylesheet" type="text/css" href="../simple-grid.min.css">
+    <!-- Custom styles for this template -->
+    <link href="../main.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/bcea86c7cf.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	  <script>
+	  $( function() {
+	    $( "#accordion" ).accordion({
+	      active: false,
+	      collapsible: true
+	    });
+	  } );
+	  </script>
+  </head>
+
+  <body>
+   <!-- This will be the main section of the blog -->
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-12">
+  				<div class="header-section">
+  					<h1 class="blog-title">Building a Success Story Machine 
+  					</h1>
+  					<h4 class="sub-title">June 21st, 2017</h4>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+
+   <!-- This will be the first section -->
+  	<div class="container aligner">
+  		<div class="row">
+  			<div class="col-12">
+  					<h2>Description</h2>
+  						<p class="blog-section">Per the freeCodeCamp Front-End Certificate curriculum, I created a Random Quote Machine, or in my case, a Success Story Machine. It is a simple generator that provides links to stories about self-taught developers finding jobs. The purpose was to give the project my own twist and build something that others might find useful. </p>
+            <h2>Tecnologies Used</h2>
+              <p class="blog-section">HTML/CSS, vanillaJS</p>
+            <h2>What I struggled with</h2>
+              <p class="blog-section">The most difficult part of this project was successfully using the Twitter API. I had troubles figuring out how to change the text content of the Tweet button after the button had already loaded. After hours of struggling, I finally realized the Twitter API wouldn't let you change the text-data within the tweet button after it loaded. </p>
+              <p>In order to fix that, I had to use a function they mention in the docs called createShareButton. Now, every time the user clicks the button "Get Success Story", a new tweet button is generated with the link inside. This solved my problem and made it possible to have a button for the user to tweet the story.</p>
+              <p>The other problem I ran into was generating the same story twice in a row. In order to prevent this, I had to remove the story from the array so it wouldn't come up twice. This also allowed the user to get all the stories at least once before seeing the same story again.</p>
+            <h2>What I learned</h2>
+              <p class="blog-section">I learned how to use the Twitter API and how to write a "getter" function. The Twitter API docs didn't have a lot of examples so I had to find outside sources in order to fully understand how everything worked. However, I am now familiar with the API and feel confident in my abilities to use it in future applications.</p>
+              <p>During this project, I pair-programmed with a friend who is a Senior Developer who taught me how to write a getter function. He mentioned that the importance of this is encapsulating information into one place: a function. I used this strategy to encapsulate my array of stories.</p>
+  			</div>
+  		</div>
+  	</div>
+    
+    
+
+  	
+  	<!-- This will be the Contact section -->
+  	<div class="back-section aligner">
+  		<div class="row">
+  			<div class="col-12">
+  				<h2><a href="../index.html">Back to home</a></h2>
+  					
+  			</div>
+  		</div>
+  	</div>
+    <!-- This will be the Footer section -->
+  	<div class="foot-section aligner">
+  		<div class="row">
+  			<div class="col-12">
+  				<p>Made with <i class="fa fa-music footer-icons" aria-hidden="true"></i> and <i class="fa fa-heart footer-icons"></i> in California by Joe Previte <span class="copyright">&copy; 2017</span></p>
+  			</div>
+  		</div>
+  	</div>
+
+  </body>
+</html>

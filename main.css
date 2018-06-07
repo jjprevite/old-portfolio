@@ -1,0 +1,180 @@
+body {
+  padding-top: 5px;
+  font-family: 'Lato', sans-serif;
+}
+
+h3{
+	text-align: center;
+	margin: 0;
+	padding: 25px;
+}
+
+h3:focus{
+	outline: none;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.header-section {
+	padding: 75px;
+}
+
+.main-title {
+	font-size: 20vw;
+	font-color: black;
+	line-height: 100%;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+.blog-title {
+	font-size: 12vw;
+	font-color: black;
+	line-height: 100%;
+	padding: 0;
+	margin: 0;
+	text-align: left;
+}
+
+.sub-title {
+	font-size: 1em;
+	font-color: black;
+	text-align: left;
+	padding-left: 14px;
+}
+
+.center {
+	text-align: center;
+}
+
+.portfolio-section{
+	height: 150px;
+	padding: 100px 50px 10px 50px;
+	/*background-color: orange;*/
+	text-align: center;
+}
+
+.back-section{
+	padding: 50px;
+	text-align: center;
+}
+
+.section{
+	height: 375px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	display: vertical;
+	align-items: center;
+	justify-content: center;
+}
+
+.section1{
+	background-color: #CDEDF6;
+}
+
+.section2{
+	background-color: #5EB1BF;
+}
+
+.section3{
+	background-color: #EF7B45;
+}
+
+.section4{
+	background-color: #CE5A40;
+}
+
+.grow:hover
+{
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  cursor: pointer;
+
+}
+
+
+.extra-padding{
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.list-item {
+	display: inline;
+	list-style-type: none;
+	padding-right: 62px;
+	font-size: 1.05em;
+}
+
+/*ul li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 62px;
+	font-size: 1.05em;
+}*/
+
+.list {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*Images and gifs*/
+.thumbnail{
+	max-width: 50%;
+	max-height: 50%;
+
+}
+.about-section {
+	height: 175px;
+	padding: 100px;
+	text-align: center;
+}
+
+.blog-section {
+	padding-bottom: 30px;
+}
+
+.foot-section {
+	height: 30px;
+	padding: 15px;
+	 
+	text-align: center;
+	vertical-align: middle;
+}
+
+.foot-section p{
+	font-size: 0.85em;
+}
+
+.aligner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#icons li {
+	font-size: 1.5em;
+	display: inline;
+	list-style-type: none;
+	padding-right: 20px;
+}
+
+.footer-icons {
+	font-size: 2em;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.copyright {
+	padding-left: 7px;
+}
+

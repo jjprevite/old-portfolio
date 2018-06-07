@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Success Story Machine</title>
+	<link rel="stylesheet" type="text/css" href="simple-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+<script>window.twttr = (function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0],
+	  t = window.twttr || {};
+	if (d.getElementById(id)) return t;
+	js = d.createElement(s);
+	js.id = id;
+	js.src = "https://platform.twitter.com/widgets.js";
+	fjs.parentNode.insertBefore(js, fjs);
+
+	t._e = [];
+	t.ready = function(f) {
+	  t._e.push(f);
+	};
+
+	return t;
+	}(document, "script", "twitter-wjs"));
+</script>
+</head>
+
+<body>
+	
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<br>
+			<div id="title">Success Story Machine</div>
+				<p class="introduction">Learning to code is tough and can be discouraging at certain moments. However, sometimes all you need is <em>inspiration</em>.</p>
+				<br>
+				<button id="getStory">Get success story</button>
+				<br>
+				<br>
+				<p id="instructions" class="introduction">Click the button above for a random success story from a member of the freeCodeCamp community.</p>
+				<a id="story-link" href="#" target="_blank"><h3 id="story-title"></h3></a>
+				<div id="container"></div>
+				
+		</div>
+	</div>
+</div>
+		
+
+</body>
+</html>
+<script type="text/javascript" src="main.js"></script>
+

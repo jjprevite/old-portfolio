@@ -1,0 +1,87 @@
+body{
+	background: #F7971E;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #fff7e4;
+	font-family: 'Open Sans', sans-serif;
+}
+#get-weather{
+	text-align: center;
+	margin: 200px;
+	font-size: 125px;
+	opacity: .75;
+}
+
+#get-weather:hover{
+	opacity: 1;
+	cursor: pointer;
+	color: white;
+}
+
+#weather-box{
+	text-align: center;
+	padding-top: 150px; 
+	margin: auto;
+	display: none;
+}
+
+#temperature{
+	font-size: 106px;
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	line-height: .67;
+}
+
+#button{
+	padding: 0;
+	margin: 0;
+	opacity: .6;
+}
+
+#button:hover{
+	cursor: pointer;
+	color: white;
+	opacity: 1;
+}
+
+.data-point{
+	font-size: 36px;
+	font-weight: 400;
+}
+
+p{
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.degree{
+	font-size: 87px;
+}
+
+#modal{
+	padding: 0;
+	text-align: center;
+	margin: 200px;
+	
+}
+
+.gif{
+	height: auto;
+	width: auto;
+}
+
+#modal p{
+	font-size: 75px;
+}
+
+#footer{
+	text-align: center;
+	padding: 10px;
+	color: #fff7e4;
+	display: none;
+}
+
+#icon_id{
+	padding-bottom: 25px;
+}

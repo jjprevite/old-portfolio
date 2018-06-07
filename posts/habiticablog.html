@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <title>JJP - Habitica Contribution Blog Post</title>
+
+   
+    <link rel="stylesheet" type="text/css" href="../simple-grid.min.css">
+    <!-- Custom styles for this template -->
+    <link href="../main.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/bcea86c7cf.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	  <script>
+	  $( function() {
+	    $( "#accordion" ).accordion({
+	      active: false,
+	      collapsible: true
+	    });
+	  } );
+	  </script>
+  </head>
+
+  <body>
+   <!-- This will be the main section of the blog -->
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-12">
+  				<div class="header-section">
+  					<h1 class="blog-title">Contributing to Habitica 
+  					</h1>
+  					<h4 class="sub-title">June 11th, 2017</h4>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+
+   <!-- This will be the first section -->
+  	<div class="container aligner">
+  		<div class="row">
+  			<div class="col-12">
+  					<h2>Description</h2>
+  						<p>I contributed to an open-source project called Habitica, which is a “gamified task-manager.” Basically, it’s a to do list with features you might find in a typical RPG game. It’s a great tool for creating good habits and making life feel like a game. It’s a lot of fun, especially if you have friends that are into it as well.</p>
+              <p>For my contribution, I worked with a friend on solving this@ issue. The main problems of the issue were the following:
+              -the Group Plans Task Approval List page didn’t indicate the task type that needed to be approved
+              -it didn’t render markdown or emojis in the title or description</p>
+              <p class="blog-section">To fix this, we had to modify a few files- mainly a JSON, and two files written in Javascript.</p>
+            <h2>Tecnologies Used</h2>
+              <p class="blog-section">-MongoDB, Express, Angular, Node and Jade(now Pug).</p>
+            <h2>What I struggled with</h2>
+              <p>Finding the files that had the lines of code that needed to be modified for the first issue (task type) and understanding enough Jade to be able to render markdown and emojis based on the nom packages used in the project.</p>
+              <p>
+              The issue took two weeks to finish, or around 14-18 hours to fix. The majority of that time was knowing which files to look in. </p>
+              <p>To resolve this issue, I spent hours looking through the project folder, searching different terms like “group” and “group approvals” until I was able to locate the lines of code to fix. After I found the files, I faced a new challenge of figuring out how to take data from the database and be able to call it in the JSON file to be displayed on the Group Plans Task Approval page.</p>
+              <p>I looked at the objects in the database and found a task type key-value pair with the information I needed. Then I had to it to an object as a property on an object in a file called groupApprovalsController.js so that it could be referenced in the JSON file.</p>
+              <p>To figure all this out with my friend, we used our Javascript knowledge and did a lot of testing different things out until we were able to find a solution that worked.</p>
+              <p>The next challenge we faced was being able to render markdown and emojis. Luckily, the project uses an npm package developed by one of the main project developers and the docs were easy to follow. We looked at the similar Jade pages and recognized patterns in how the markdown was render.</p>
+              <p>Once we knew the syntax for markdown and the page we had to add the markdown to, we thought the rest would be easy. But it wasn’t. We struggled to figure out how to pass in the specific text we needed. After hours of frustration and many unsuccessful attempts, we finally figured it out. We had to pass in a function called “approvalTitle” with an argument of “approval” and set text = to that so the line we ended up writing was markdown(text = “approvalTitle(approval)”).</p>
+              <p>Of course we thought we were done till we noticed the new code shifted the location of the “Approve” button on the page. One solution opened up a new problem but we continued on. After digging around, Rachel, my friend, was able to find a Bootstrap fix that made it look a little better. We asked for help in a chat forum for Habitica open-source developers and were advised to submit a pull request to receive feedback.</p>
+              <p class="blog-section">I submitted one where another contributor made a few suggestions on how to fix the formatting issue we were running into. After cleaning up my commits and organizing them into meaningful ways so that other developers would understand them, I submitted a new pull request which has been approved and will soon be merged!</p>
+            <h2>What I learned</h2>
+              <p>Overall, I learned a lot from this project! The main things were:</p>
+                <ul>
+                  <li>how to work on code written by other people</li>
+                  <li>how to work with another developer to fix a bug</li>
+                  <li>how to write meaningful commit messages</li>
+                  <li>how to submit a pull request</li>
+                  <li>how to contribute to an open-source project</li>
+                </ul>
+              </p>
+              <p>It was a neat experience and I feel thankful for it to have been so positive my first open-source project. I hope to continue contributing to Habitica in the future and other open-source projects that come my way.</p>
+
+  			</div>
+  		</div>
+  	</div>
+    
+    
+
+  	
+  	<!-- This will be the Contact section -->
+  	<div class="back-section aligner">
+  		<div class="row">
+  			<div class="col-12">
+  				<h2><a href="../index.html">Back to home</a></h2>
+  					
+  			</div>
+  		</div>
+  	</div>
+    <!-- This will be the Footer section -->
+  	<div class="foot-section aligner">
+  		<div class="row">
+  			<div class="col-12">
+  				<p>Made with <i class="fa fa-music footer-icons" aria-hidden="true"></i> and <i class="fa fa-heart footer-icons"></i> in California by Joe Previte <span class="copyright">&copy; 2017</span></p>
+  			</div>
+  		</div>
+  	</div>
+
+  </body>
+</html>
